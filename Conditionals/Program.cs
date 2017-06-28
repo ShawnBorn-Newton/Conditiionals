@@ -15,7 +15,7 @@ namespace Conditionals
                 int numberOfPeople = int.Parse(Console.ReadLine());
                 Console.WriteLine("Please enter in your total bill.");
                 double totalBill = double.Parse(Console.ReadLine());
-
+                
 
                 double moreDiscountTotal = (totalBill - (totalBill * .10d));
                 double lessDiscountTotal = (totalBill - (totalBill * .05d));
@@ -24,11 +24,13 @@ namespace Conditionals
                 if (totalBill >= 50d)
                 {
                     Console.WriteLine("Total with discount: $" + moreDiscountTotal);
+                    Console.WriteLine("Each person will pay: " + moreDiscountTotal / numberOfPeople);
                 }
                 else
                 {
                     Console.WriteLine("Total with discount: $" + lessDiscountTotal);
-                }
+                    Console.WriteLine("Each person will pay: " + lessDiscountTotal / numberOfPeople);
+            }
 
                 Console.WriteLine("Tip:__________");
                 Console.WriteLine("Total:__________");
