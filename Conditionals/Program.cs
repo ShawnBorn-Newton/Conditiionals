@@ -10,7 +10,7 @@ namespace Conditionals
     {
         static void Main(string[] args)
         {
-            {
+            
                 Console.WriteLine("How many people in your party?");
                 int numberOfPeople = int.Parse(Console.ReadLine());
                 Console.WriteLine("Please enter in your total bill.");
@@ -19,7 +19,8 @@ namespace Conditionals
 
                 double moreDiscountTotal = (totalBill - (totalBill * .10d));
                 double lessDiscountTotal = (totalBill - (totalBill * .05d));
-
+            Console.WriteLine("THANK YOU");
+            Console.WriteLine("Party of:" + numberOfPeople);
                 if (totalBill >= 50d)
                 {
                     Console.WriteLine("Total with discount: $" + moreDiscountTotal);
@@ -29,6 +30,8 @@ namespace Conditionals
                     Console.WriteLine("Total with discount: $" + lessDiscountTotal);
                 }
 
+                Console.WriteLine("Tip:__________");
+                Console.WriteLine("Total:__________");
             }
         }
-}
+    }
