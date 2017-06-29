@@ -35,49 +35,82 @@ namespace Conditionals
             //    Console.WriteLine("Tip:__________");
             //    Console.WriteLine("Total:__________");
 
-            Console.WriteLine("Please Enter A Number From One To Ten In Text From");
+            //Console.WriteLine("Please Enter A Number From One To Ten In Text From");
 
-            string number = Console.ReadLine();
-            switch (number)
+            //string number = Console.ReadLine();
+            //switch (number)
+            //{
+            //    case "zero":
+            //    Console.WriteLine("0");
+            //        break;
+            //    case "one":
+            //        Console.WriteLine("1");
+            //        break;
+            //    case "two":
+            //        Console.WriteLine("2");
+            //        break;
+            //    case "three":
+            //        Console.WriteLine("3");
+            //        break;
+            //    case "four":
+            //        Console.WriteLine("4");
+            //        break;
+            //    case "five":
+            //        Console.WriteLine("5");
+            //        break;
+            //    case "six":
+            //        Console.WriteLine("6");
+            //        break;
+            //    case "seven":
+            //        Console.WriteLine("7");
+            //        break;
+            //    case "eight":
+            //        Console.WriteLine("8");
+            //        break;
+            //    case "nine":
+            //        Console.WriteLine("9");
+            //        break;
+            //    case "ten":
+            //        Console.WriteLine("10");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Not in peramiters");
+            //        break;
+            //}
+
+            //switchcase
+            Console.WriteLine("Lets play Fizz Buzz!");
+            Console.WriteLine("Please enter a Fizz number between 1 and 9.");
+            int fizz = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enetr a Buzz number between 1 and 9.");
+            int buzz = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Now enter a test number between 1 and 9");
+            int test = int.Parse(Console.ReadLine());
+            
+            if (test < 1 || test > 9)
             {
-                case "zero":
-                Console.WriteLine("0");
-                    break;
-                case "one":
-                    Console.WriteLine("1");
-                    break;
-                case "two":
-                    Console.WriteLine("2");
-                    break;
-                case "three":
-                    Console.WriteLine("3");
-                    break;
-                case "four":
-                    Console.WriteLine("4");
-                    break;
-                case "five":
-                    Console.WriteLine("5");
-                    break;
-                case "six":
-                    Console.WriteLine("6");
-                    break;
-                case "seven":
-                    Console.WriteLine("7");
-                    break;
-                case "eight":
-                    Console.WriteLine("8");
-                    break;
-                case "nine":
-                    Console.WriteLine("9");
-                    break;
-                case "ten":
-                    Console.WriteLine("10");
-                    break;
-                default:
-                    Console.WriteLine("Not in peramiters");
-                    break;
+                Console.WriteLine("You did not follow directions!");
             }
 
+            else if(test % fizz == 0)
+            {
+                Console.WriteLine("FIZZ!");
             }
+            else if(test % buzz == 0)
+            {
+                Console.WriteLine("BUZZ!");
+            }
+            else
+            {
+                Console.WriteLine(test);
+            }
+
+
+
+
+            
+        }
         }
     }
