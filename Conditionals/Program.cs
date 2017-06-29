@@ -79,38 +79,53 @@ namespace Conditionals
             //}
 
             //switchcase
+
             Console.WriteLine("Lets play Fizz Buzz!");
+
             Console.WriteLine("Please enter a Fizz number between 1 and 9.");
             int fizz = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please enetr a Buzz number between 1 and 9.");
-            int buzz = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Now enter a test number between 1 and 9");
-            int test = int.Parse(Console.ReadLine());
-            
-            if (test < 1 || test > 9)
+            if (fizz < 1 || fizz > 9)
             {
                 Console.WriteLine("You did not follow directions!");
             }
 
-            else if(test % fizz == 0)
-            {
-                Console.WriteLine("FIZZ!");
-            }
-            else if(test % buzz == 0)
-            {
-                Console.WriteLine("BUZZ!");
-            }
             else
             {
-                Console.WriteLine(test);
-            }
+                Console.WriteLine("Please enetr a Buzz number between 1 and 9.");
+                int buzz = int.Parse(Console.ReadLine());
+
+
+                if (buzz < 1 || buzz > 9)
+                {
+                    Console.WriteLine("You did not follow directions!");
+                }
+                Console.WriteLine("Now enter a test number between 1 and 9");
+                int test = int.Parse(Console.ReadLine());
+
+                if (test < 1 || test > 9)
+                {
+                    Console.WriteLine("You did not follow directions!");
+                }
+
+                else if (test % fizz == 0)
+                {
+                    Console.WriteLine("FIZZ!");
+                }
+                else if (test % buzz == 0)
+                {
+                    Console.WriteLine("BUZZ!");
+                }
+
+                else
+                {
+                    Console.WriteLine(test);
+                }
 
 
 
 
-            
+            }   
         }
         }
     }
